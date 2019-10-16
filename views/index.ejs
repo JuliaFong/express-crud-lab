@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utl-8">
+        <title>Veggies for meatlovers</title>
+        <link rel="stylesheet" href="style.css">
+        <style></style>
+    </head>
+    <body>
+        <h1>Veggies for Meatlovers</h1>
+        <ul class="veggies">
+            <% for(let i =0; i < veggies.length; i++) { %>
+                <li>
+                    The 
+                    <a href="/veggies/<%= i %>">
+                        <%=veggies[i].name; %> </a> is 
+                    <img src="<%=veggies[i].img%>">
+                    
+                    <%}%>
+                </li>
+        </ul>
+    </body>
+</html>

@@ -13,11 +13,13 @@
                 <li>
                     The 
                     <a href="/veggies/<%= i %>">
-                        <%=veggies[i].name; %> </a> is 
+                        <%=veggies[i].name; %> </a> 
                     <img src="<%=veggies[i].img%>">
-                    
-                    <%}%>
                 </li>
+                <form action="/veggies/<%=i%>?_method=DELETE" method="POST">
+                    <button type='Submit'>Delete</button>
+                </form>>
+            <%}%>
         </ul>
     </body>
 </html>
